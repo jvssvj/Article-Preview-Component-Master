@@ -1,0 +1,59 @@
+@media(max-width:780px) {
+    body {
+        overflow: auto;
+    }
+    .card {
+        flex-direction: column;
+    }
+
+    .drawers img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .text {
+        width: 265px;
+        height: 252px;
+        padding: 2em;
+        padding-bottom: 1em;
+    }
+    .text h1 {
+        height: 66px;
+        font-size: 16px;
+    }
+
+    .text p {
+        width: 257px;
+        height: 103px;
+    }
+    
+    #btn {
+        position: absolute;
+        margin-left: 17.8em;
+        z-index: 1;
+    }
+
+    #social-icons {
+        position: absolute;
+        margin-top: 31.3em;
+        margin-left: 0;
+    }
+
+    .icons {
+        height: 40px;
+        border-radius: 0px 0px 10px 10px;
+        width: 289px;
+        justify-content: start;
+    }
+
+    .icons p {
+        margin-left: 1.5em;
+    }
+    
+    .icons::before {
+        display: none;
+    }
+    .attribution {
+       top: 73em;
+    }
+}
