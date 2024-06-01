@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    --Very__Dark__Grayish__Blue: hsl(217, 19%, 35%);
+    --Desaturated__Dark__Blue: hsl(214, 17%, 51%);
+    --Grayish__Blue: hsl(212, 23%, 69%);
+    --Light__Grayish__Blue: hsl(210, 46%, 95%);
+    --White: hsl(0, 0%, 100%);
+    --Green: hsl(164, 92%, 31%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Light__Grayish__Blue);
+    font-size: .8125rem;
+    margin: 0em 1rem;
+}
+
+.article__preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    max-width: 731px;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: var(--Light__Grayish__Blue);
+}
+
+.article__preview__bg {
+    width: 286px;
+    height: 283px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.article__preview__txt {
+    max-height: 283px;
+    padding: 1.923rem 3em;
+}
+
+.article__preview__txt__t {
+    font-size: 1.3rem;
+    color: var(--Very__Dark__Grayish__Blue);
+}
+
+.article__preview__txt__p {
+    margin-top: 1em;
+    line-height: 1.3rem;
+    color: hsl(214, 17%, 51%);
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    margin-top: 1.7em;
+    position: relative;
+}
+
+.person__infos {
+    display: flex;
+    flex-direction: column;
+    margin-left: .8rem;
+}
+
+.person__avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.person__infos__name {
+    color: var(--Very__Dark__Grayish__Blue);
+    font-weight: 700;
+}
+
+.person__infos__date {
+    color: var(--Grayish__Blue);
+}
+
+#btn--share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease;
+    background-color: var(--Grayish__Blue);
+    position: absolute;
+    right: 0;
+    z-index: 5;
+}
+
+#btn--share svg {
+    width: 16px;
+    height: 13px;
+    transition: 0.2s ease;
+}
+
+#btn--share:hover path{
+    fill: var(--White);
+}
+
+#btn--share:hover {
+    background-color: var(--Desaturated__Dark__Blue);
+}
+
+#btn--share:active {
+    transform: scale(0.92);
+}
+
+.person__socials {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    background-color: var(--Very__Dark__Grayish__Blue);
+    width: 100%;
+    max-width: 256px;
+    height: 56px;
+    border-radius: 1em;
+    margin: -7rem 0em 0em 13.5rem;
+}
+
+.person__socials::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 3.8em 0em 0em 1em;
+    background: var(--Very__Dark__Grayish__Blue);
+    transform: rotate(45deg);
+}
+
+.person__socials__share {
+    letter-spacing: 4px;
+    color: var(--Light__Grayish__Blue);
+    transition: 0.2s ease;
+}
+
+.icon--social {
+    cursor: pointer;
+}
+
+.icon--social:active {
+    transform: scale(0.92);
+}
+
+.attribution {
+    position: absolute;
+    margin-top: 70em;
+    color: var(--Desaturated__Dark__Blue);
+    padding: 0.8em;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--Green);
+}
+
+.toggle-socials {
+    display: flex;
+}
